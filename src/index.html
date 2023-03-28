@@ -7,13 +7,44 @@
     <title>Realize Yourself</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/logo/logo.png" />
   </head>
 
   <body>
     <header>
+      <div
+        class="toast fade hide"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">
+          <strong class="mr-auto">Notification</strong>
+          <button
+            type="button"
+            class="ml-2 mb-1 close"
+            data-dismiss="toast"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="toast-body">
+          This functionality is currently unavailable.
+        </div>
+      </div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-          <a class="navbar-brand" href="#">Realize Yourself</a>
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img
+              src="img/logo/logo.png"
+              width="40"
+              height="40"
+              alt="Logo"
+              class="mr-2"
+            />
+            Realize Yourself
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -28,7 +59,9 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <button class="btn btn-primary" type="button">Загрузить</button>
+                <button class="btn btn-primary download-btn" type="button">
+                  Загрузить
+                </button>
               </li>
             </ul>
           </div>
@@ -192,6 +225,15 @@
                 оригинальность, как в повседневной жизни, так и в искусстве и
                 креативности.
               </p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="popover"
+                title="Popover inside modal"
+                data-content="This is a Popover inside a modal."
+              >
+                Click me
+              </button>
             </div>
             <div class="modal-footer">
               <button
@@ -407,11 +449,10 @@
         </div>
       </div>
     </section>
-
-    <footer>
-      <div class="container">
-        <div class="about">Титов Павел</div>
-        <div class="links">
+    <footer class="d-flex justify-content-between border-top py-4 mt-auto">
+      <div class="container d-flex justify-content-between">
+        <div class="about font-weight-bold">Титов Павел</div>
+        <div class="links d-flex gap-3">
           <a href=""
             ><img src="img/logo/linkedin-svgrepo-com.svg" alt="linkedIn"
           /></a>
