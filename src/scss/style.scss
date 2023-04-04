@@ -6,30 +6,6 @@ $accent-color: #008cff;
 $header-color: #878787;
 $text-color: #000;
 
-$object-colors: #03045e, #023e8a, #0077b6, #0096c7, #00b4d8;
-
-@mixin flex-between {
-  display: flex;
-  justify-content: space-between;
-}
-
-@mixin border {
-  border: 1px solid $header-color;
-}
-
-@mixin download-button-color {
-  background-color: $accent-color;
-  color: $main-color;
-}
-
-@mixin object-color($color) {
-  background-color: $color;
-
-  &:hover {
-    background-color: lighten($color, 10%);
-  }
-}
-
 html {
   color: $text-color;
 }
